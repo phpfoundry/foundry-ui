@@ -1,3 +1,45 @@
+/** Common Icons **/
+.add_icon, .edit_icon, .del_icon, .url_icon {
+    text-decoration:none;
+    margin-top:0pt;
+    padding:0.4em;
+    padding-left:1.7em;
+    background:transparent;
+    background-repeat: no-repeat;
+    background-position: 0.3em center;
+    -moz-border-radius:0.4em;
+    -webkit-border-radius:0.4em;
+    border-radius:0.4em;
+}
+.add_icon:hover, .edit_icon:hover, .del_icon:hover, .url_icon:hover {
+    background-color:#DDDDDD;
+}
+
+.url_icon {
+    background-image:url(images/url_grey.png);
+}
+.url_icon:hover {
+    background-image:url(images/url_black.png);
+}
+.add_icon {
+    background-image:url(images/add_grey.png);
+}
+.add_icon:hover {
+    background-image:url(images/add_black.png);
+}
+.edit_icon {
+    background-image:url(images/edit_grey.png);
+}
+.edit_icon:hover {
+    background-image:url(images/edit_black.png);
+}
+.del_icon {
+    background-image:url(images/del_grey.png);
+}
+.del_icon:hover {
+    background-image:url(images/del_black.png);
+}
+
 /** Common Form elements **/
 
 .form_info {
@@ -11,6 +53,9 @@
     width:6.25em;
     padding:0.15em;
 }
+.wide_label .form_label {
+    width:8.25em;
+}
 .form_box {
     margin:0.6em;
 }
@@ -18,6 +63,19 @@
     padding:0.2em;
     margin:0.25em;
     color:black;
+}
+.form {
+    width:26em;
+}
+.wide_label .form {
+    width:24em;
+}
+select.form, textarea.form {
+    width:26.5em;
+}
+.wide_label select.form,
+.wide_label textarea.form {
+    width:24.5em;
 }
 .form {
     color:#333333;
@@ -69,7 +127,7 @@ a.form_btn {
     padding:0.1em 0.25em 0.1em 0.25em;
 }
 .form_text {
-    padding:0.2em 0.1em;
+    padding:0.50em 0.2em;
 }
 .form_box, .form_box_header {
 	background: #F0F0F0 url("images/white_gradient.png") -20px -50px repeat-x;
