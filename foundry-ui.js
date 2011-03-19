@@ -35,4 +35,16 @@ UI.init = function() {
     	    }
 	    });
     });
+	
+    
+    $(".form_toggle input").click(function() {                                   
+        if ($(this).attr("type") == "radio") {                                  
+            $("input[name=" + $(this).attr("name") + "]").parents().removeClass("selected");
+        }
+        if ($(this).attr("checked")) {
+            $(this).parent().addClass("selected");
+        } else {                                  
+            $(this).parent().removeClass("selected");
+        }
+    });
 };
